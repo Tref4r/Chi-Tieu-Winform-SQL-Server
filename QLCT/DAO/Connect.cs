@@ -9,6 +9,6 @@ namespace QLCT.DAO
 {
     public class Connect
     {
-        protected SqlConnection getConnection = new SqlConnection(@"Data Source=DESKTOP-H3390EH\SQLEXPRESS04;Initial Catalog=DA_QLCT;Integrated Security=True");
+        protected SqlConnection getConnection = new SqlConnection(@"Data Source=TREF4R;Initial Catalog=DA_QLCT;Integrated Security=True");
     }
 }

@@ -165,25 +165,5 @@ namespace QLCT.DAO
                 return false;
             }
         }
-
-        public DataTable SoLuongTheoTinh()
-        {
-            string query = "select * from TinhThanh";
-            return Table(query);
-        }
-
-        public DataTable SoLuongDoTuoi(string tinhThanh)
-        {
-            getConnection.Open();
-            sqlCommand = new SqlCommand("DoTuoi", getConnection);
-            sqlCommand.CommandType = CommandType.StoredProcedure;
-            sqlCommand.Parameters.AddWithValue("@tinhthanh", tinhThanh);
-            sqlCommand.ExecuteNonQuery();
-            DataTable dataTable = new DataTable();
-            dataAdapter = new SqlDataAdapter(sqlCommand);
-            dataAdapter.Fill(dataTable);
-            getConnection.Close();
-            return dataTable;
-        }
     }
 }

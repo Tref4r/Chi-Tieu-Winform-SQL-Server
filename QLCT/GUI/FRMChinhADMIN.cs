@@ -52,12 +52,7 @@ namespace QLCT.GUI
             OpenChildForm(new frmQuanLyTaiKhoan());
         }
 
-        private void btnThongKe_Click(object sender, EventArgs e)
-        {
-            RestButton();
-            btnThongKe.BackColor = Color.Brown;
-            OpenChildForm(new frmThongKeTaiKhoan());
-        }
+  
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
@@ -66,7 +61,7 @@ namespace QLCT.GUI
 
         private void FRMChinhADMIN_Load(object sender, EventArgs e)
         {
-            btnThongKe_Click(sender, e);
+           
             if (frmDangNhap.SizeForm)
             {
                 WindowState = FormWindowState.Maximized;

@@ -73,14 +73,6 @@ namespace QLCT.BUS
             return taiKhoanDAO.DanhSachTaiKhoanTheoLuaChon(taiKhoan, gioiTinhNam, gioiTinhNu, DiaChi);
         }
 
-        public DataTable SoLuongTheoTinh()
-        {
-            return taiKhoanDAO.SoLuongTheoTinh();
-        }
 
-        public DataTable SoLuongDoTuoi(string tinhThanh)
-        {
-            return taiKhoanDAO.SoLuongDoTuoi(tinhThanh);
-        }
     }
 }
