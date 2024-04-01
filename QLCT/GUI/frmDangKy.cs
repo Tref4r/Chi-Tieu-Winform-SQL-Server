@@ -410,7 +410,7 @@ namespace QLCT.GUI
         //Danh sách huyện
         public void InitializeDanhSachHuyen()
         {
-            DanhSachHuyen.Add("TP Hà Nội", new List<string> { "Đan Phượng", "Gia Lâm", "Đông Anh", "Chương Mỹ", "Hoài Đức", "Ba Vì", "Mỹ Đức", "Phúc Thọ", "Thạch Thất", "Quốc Oai", "Thanh Trì", "Thường Tín", "Thanh Oai", "Phú Xuyên", "Mê Linh", "Sóc Sơn", "Ứng Hòa", "Sơn Tây" });
+            DanhSachHuyen.Add("TP Hà Nội", new List<string> { "Đan Phượng", "Gia Lâm", "Đông Anh", "Chương Mỹ", "Hoài Đức", "Ba Vì", "Mỹ Đức", "Phúc Thọ", "Thạch Thất", "Quốc Oai", "Thanh Trì", "Thường Tín", "Thanh Oai", "Phú Xuyên", "Mê Linh", "Sóc Sơn", "Ứng Hòa", "Ba Đình", "Hoàn Kiếm", "Hai Bà Trưng", "Đống Đa", "Tây Hồ", "Cầu Giấy", "Thanh Xuân", "Hoàng Mai", "Long Biên", "Bắc Từ Liêm", "Nam Từ Liêm", "Hà Đông", "Sơn Tây" });
             DanhSachHuyen.Add("Hải Dương", new List<string> { "Bình Giang", "Cẩm Giàng", "Gia Lộc", "Kim Thành", "Kinh Môn", "Nam Sách", "Ninh Giang", "Thanh Hà", "Thanh Miện", "Tứ Kỳ", "Chí Linh", "TP Hải Dương" });
             DanhSachHuyen.Add("Hải Phòng", new List<string> { "Hồng Bàng", "Lê Chân", "Ngô Quyền", "Kiến An", "Hải An", "Đồ Sơn", "Dương Kinh", "An Dương", "An Lão", "Kiến Thụy", "Tiên Lãng", "Thuỷ Nguyên", "Vĩnh Bảo", "Bạch Long Vĩ", "Cát Hải" });
             DanhSachHuyen.Add("Hưng Yên", new List<string> { "Ân Thi", "Mỹ Hào", "Tiên Lữ", "Phù Cừ", "Yên Mỹ", "Kim Động", "Văn Giang", "Văn Lâm", "Khoái Châu" });
