@@ -145,15 +145,16 @@ select*from PhuongThucThanhToan
 
 
 -- Tạo bảng Chi Tiết Giao Dịch Thu
-CREATE TABLE CTGiaoDichThu
+    CREATE TABLE CTGiaoDichThu
 (
     MaGiaoDich INT IDENTITY(1,1) PRIMARY KEY,
-    TenDangNhap NVARCHAR(50) FOREIGN KEY REFERENCES TaiKhoan(TenDangNhap),
+    TenDangNhap NVARCHAR(50),
     MaDanhMuc NVARCHAR(50) FOREIGN KEY REFERENCES DanhMucThu(MaDanhMuc),
     MaPhuongThucThanhToan NVARCHAR(50) FOREIGN KEY REFERENCES PhuongThucThanhToan(MaPhuongThucThanhToan),
     SoTien DECIMAL(18, 2),
     MoTa NVARCHAR(MAX),
-    NgayGiaoDich DATE
+    NgayGiaoDich DATE,
+    FOREIGN KEY (TenDangNhap) REFERENCES TaiKhoan(TenDangNhap) ON DELETE CASCADE
 )
 
 -- Tạo stored procedure để cập nhật giao dịch thu
